@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Concept's</title>
+    <style>
+        /* 1. Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 2. Type selector */
+
+        p {
+            font-size: 16px;
+            margin: 10px 20px;
+        }
+
+        /* 3. class selector */
+
+        .label1 {
+            background-color: aqua;
+        }
+
+        /* 4. ID selector */
+
+        #mainhead {
+            color: rgb(255, 0, 0);
+        }
+
+        /* 5. attribute selector */
+        input[type="text"] {
+            border: 1px solid #c00000;
+        }
+
+        /* 6. Descendant Selector */
+
+        article p {
+            font-style: italic;
+            background-color: #1a1a1a;
+            color: white;
+            font-size: 10px;
+        }
+
+
+        /* 7.Child Selector */
+
+
+
+        div>p {
+            background-color: orange;
+            color: brown;
+
+        }
+
+
+        /* 7. Adjcent Selector */
+
+        h1+p,
+        h3+p {
+            font-weight: bold;
+        }
+
+        /* 7. Adjcent Selector */
+        /* 7. pseudo class Selector */
+
+        input:hover {
+            background-color: rgb(6, 96, 175);
+            color: black;
+        }
+
+        /* 7. psuedo element Selector */
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        /* 7. Grouping Selector */
+
+        h1,
+        h2,
+        h3 {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainhead">main heading</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum repellendus praesentium quisquam voluptas qui
+        sunt in exercitationem, modi aliquam rerum minus, ipsum fuga necessitatibus ipsam optio voluptatibus. Sint
+        officia architecto veniam mollitia.</p>
+    <input type="text" placeholder="Enter name question">
+    <label for="features" class="label1">features on listed: -</label>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <ol>
+            <li>list 3</li>
+            <li>list 4</li>
+        </ol>
+    </ul>
+
+    <div>
+        <p>i am child</p>
+        <p>i am child</p>
+        <section>
+            <p>i am decendent </p>
+        </section>
+        <p>i am child</p>
+
+    </div>
+
+    <h2>Subheading details</h2>
+    <article>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, possimus? Eveniet architecto quaerat labore
+            fuga
+            impedit animi vero illum voluptate aspernatur facilis, reiciendis rem obcaecati et nemo consequuntur non est
+            quam. Debitis hic illo totam! Molestias doloremque tenetur impedit amet cum, ipsa mollitia?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas sint quaerat, nostrum minus quisquam illo.
+            Fuga eveniet voluptas sed facere.</p>
+        <div>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex facere earum.</p>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam officiis asperiores tempora
+                porro quisquam nihil veniam cumque. Eos accusantium omnis commodi quod. Nisi, eius temporibus cum dicta
+                atque cupiditate!</p>
+        </div>
+    </article>
+
+    <h3>h3 subheading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates exercitationem similique praesentium
+        molestias voluptatem, adipisci tenetur nam ea et dolor nisi architecto vitae, enim laboriosam maxime, itaque
+        magni corporis quo eligendi iusto? Reiciendis accusantium incidunt, vero adipisci inventore, cupiditate
+        blanditiis qui, magnam reprehenderit odit voluptatum.</p>
+
+    <ul>
+        <li>lorem 2</li>
+        <li>lorem3</li>
+        <li>lorem3</li>
+        <li>lorem3</li>
+        <li>lorem3</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgb(23, 22, 22), rgb(84, 84, 98));
+  color: white;
+  font-family: montserrat, sans-serif;
+  /* text-align: center; */
+}
+
+.loginContainer {
+  background: #000;
+  width: 100vh;
+  margin: 25px 50px;
+  padding: 25px 50px;
+  display: flex;
+}
+
+.loginSubContainer {
+  margin: 10px;
+}
+
+.bottom {
+  background: #161616;
+}
